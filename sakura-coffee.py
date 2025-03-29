@@ -4,7 +4,7 @@ import sys
 
 #our functions
 import drawTitleScreen
-
+import textFunction
 
 pygame.init()
 exit = False
@@ -13,6 +13,9 @@ SCREEN_WIDTH, SCREEN_HEIGHT = 412, 771
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Sakura Cafe")
 #image = pygame.image.load("Screenshot.png") #put the background here
+
+#textbox area
+textArea = pygame.Rect((0,150,500,150))
 
 #colors 
 PINK = (251, 198, 207)
@@ -26,7 +29,7 @@ personality2 = 0
 
 def game_loop():
     running = True
-    drawTitleScreen.drawTitleScreen(screen, SCREEN_WIDTH, SCREEN_HEIGHT);
+    drawTitleScreen.drawTitleScreen(screen, SCREEN_WIDTH, SCREEN_HEIGHT, textArea, PINK);
 
     while running:
         for event in pygame.event.get():
@@ -34,6 +37,8 @@ def game_loop():
                 pygame.quit()
                 sys.exit()
             #check for other clicks
+            elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                textFunction.text_click(event.pos, textArea)
 
         pygame.display.update()
 
