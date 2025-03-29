@@ -3,21 +3,49 @@ personality2 = 0
 
 def coffee_order(person1, person2):
     #sweet or spicy order
-    print("Let's see then. Do you like your drinks sweet or spicy?")
+    print("\"Let's see then. Do you like your drinks sweet or spicy?\"")
     print("1. Sweet")
-    
+    print("    You like to ease into things, prefer staying where you're comfortable,"
+    " and like to go with the flow.")
     print("2. Spicy")
-    print("\tYou like to jolt into action, and are fine being a little uncomfortable."
+    print("    You like to jolt into action, and are fine being a little uncomfortable."
     " Challenges spur you on.")
+
     #input and iteration
     answer = input()
-    if answer == 1:
+    if answer == "1":
         person1 += 1
-    elif answer == 2:
-        person += 1
+    elif answer == "2":
+        person2 += 1
     
     print()
-    print("I see, ")
+
+    #sparkles dialouge
+    print("I see, now would you like some sparkles in your drink or none?")
+    print("\"Huh? What are sparkles?\" You ask.")
+    print("The barista replies \"Oh, sparkles just give you a little "
+    "extra burst of energy to get through the day. I, personally, can't "
+    "get through a shift without a good cup of sparkling sweet rain-mist.\"")
+    print("\"Good to know,\" You respond.")
+
+    #sparkles ask and input
+    print("1. Sparkles")
+    print("    You need that bit of extra energy in motivation in the morning. "
+    "You're not the type of person to willingly take 8am classes everyday.")
+    print("2. No Sparkles")
+    print("    You don't have much trouble getting up and getting started with your day."
+    "When you get up, you feel ready to go out and get stuff done.")
+    answer = input()
+    if answer == "1":
+        print("You nod, asking for sparkles, you need a little extra energy today"
+        "to get through everything you gotta do")
+        person1 += 1
+    elif answer == "2":
+        print("You shake your head no. You're alredy wired enough and don't need any "
+        "more energy today.")
+        person2 += 2
+
+    print(person1, person2)
 
 
 coffee_order(personality1, personality2)
