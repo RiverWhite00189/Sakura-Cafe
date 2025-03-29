@@ -1,7 +1,5 @@
 import pygame
 
-
-
 def drawTitleScreen(screen, width, height, textArea, color) :
     title_screen_art = pygame.image.load("titleScreenArt.jpeg") #put the background here
     title_screen_art = pygame.transform.scale(title_screen_art, (width, height))

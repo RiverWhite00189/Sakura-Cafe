@@ -22,14 +22,20 @@ PINK = (251, 198, 207)
 screen.fill(PINK) #screen base color
 pygame.display.update()
 
+#font
+pygame.font.init()
+font = pygame.font.SysFont('Comic Sans MS', 30)
+
 personality1 = 0
 personality2 = 0
 
-
+textStack = ["words 1", "words 2", "words 3"]
+curr_text_index = 0
 
 def game_loop():
     running = True
     drawTitleScreen.drawTitleScreen(screen, SCREEN_WIDTH, SCREEN_HEIGHT, textArea, PINK);
+    textFunction.draw_text(screen, font, textStack, curr_text_index)
 
     while running:
         for event in pygame.event.get():
@@ -38,8 +44,10 @@ def game_loop():
                 sys.exit()
             #check for other clicks
             elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
-                textFunction.text_click(event.pos, textArea)
-
+                if textFunction.text_click(event.pos, textArea, curr_text_index):
+                     curr_text_index += 1
+                     textFunction.draw_text(screen, font, textStack, curr_text_index)
+        
         pygame.display.update()
 
 
