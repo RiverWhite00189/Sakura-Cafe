@@ -9,7 +9,7 @@ import drawTitleScreen
 pygame.init()
 exit = False
 
-SCREEN_WIDTH, SCREEN_HEIGHT = 320, 480
+SCREEN_WIDTH, SCREEN_HEIGHT = 412, 771
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Sakura Cafe")
 #image = pygame.image.load("Screenshot.png") #put the background here
@@ -26,7 +26,7 @@ personality2 = 0
 
 def game_loop():
     running = True
-    drawTitleScreen.drawTitleScreen();
+    drawTitleScreen.drawTitleScreen(screen, SCREEN_WIDTH, SCREEN_HEIGHT);
 
     while running:
         for event in pygame.event.get():
