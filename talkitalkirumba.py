@@ -14,7 +14,7 @@ def talkitalkirumba ():
     print("You have two choices\n")
     print("1: Wait, where am I?")
     print("2: What do you recommend?")
-    #choice = input("Please choose 1 or 2 by entering the coresponding number ")
+    choice = input("Please choose 1 or 2 by entering the coresponding number ")
     if (choice == "1"):
         print("Wait you're not from around here? I swear I saw you earlier at the apothocary.")
         print("Well you can't leave until you're ready to leave.") 
@@ -23,12 +23,12 @@ def talkitalkirumba ():
     print ("What were you palanning on doing today?")
     print("1: I really didn't know")
     print("2: I had a really good plan!")
-    #choice = input("Please choose 1 or 2 by entering the coresponding number ")
+    choice = input("Please choose 1 or 2 by entering the coresponding number ")
     if (choice == "1"):
         print("What type of day did you want to have?")
         print("1: A fun day")
         print("2: A productive day")
-        #choice = input("Please choose 1 or 2 by entering the coresponding number ")
+        choice = input("Please choose 1 or 2 by entering the coresponding number ")
         if (choice == "1"):
             print ("Did you want 1. a going out fun day or a 2. stay at home fun day?")
             #choice = input("Please choose 1 or 2 by entering the coresponding number ")
@@ -51,14 +51,14 @@ def talkitalkirumba ():
     print("please enter your tasks: ")
     print("When you're done adding your tasks, please press 4")
     while(exit == False):
-        #task = input("please enter a task: ")
+        task = input("please enter a task: ")
         if (task == "4"):
             exit  = True
         else:
             responses.append(task)
             
         global vibes
-        #vibes = input("What is your main goal / intent / focus for today? ")
+        vibes = input("What is your main goal / intent / focus for today? ")
     
 
 
@@ -69,6 +69,6 @@ def results():
     print ("and what you want your today to achomplish is: " + vibes)
 
     
-#talkitalkirumba()
-#results()
+talkitalkirumba()
+results()
    
