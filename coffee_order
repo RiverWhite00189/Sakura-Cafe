@@ -45,11 +45,12 @@ def coffee_order(person1, person2):
         "more energy today.")
         person2 += 2
 
+    print()
     print("\"Great!,\" the barista exclaims. \"Would you like any bubbles in that? They give"
     " your drink a bit of extra chew.\"")
     print("1. No Bubbles")
-    print("   You feel more comfortable staying where you know you're safe. You don't feel the "
-    "need to go out of your way to explore.")
+    print("   You feel more comfortable staying where you know you're safe. You'd rather "
+    "stick to what you know")
     print("2. With Bubbles")
     print("    You want to explore new things and have an adventure. You aren't scared of "
     "the unknown")
@@ -63,6 +64,24 @@ def coffee_order(person1, person2):
         person2 += 1
         print("\"Yeah, I'd like some bubbles,\" you say, smiling. You're excited to try this new"
         " fantasy coffee.")
+
+    #fizzles path
+    print()
+    print("The barista taps away at her screen then looks up at you with a smile. \"And would you "
+    "also like some fizz?\"")
+    print("You hesitate. You're not sure if fizz is the same in this world or some strange "
+    "new flavor.")
+    print("The barista takes mercy on you and says with a slight smile \"It just adds a bit "
+    "of texture to the drink.")
+
+    print("1. No Fizz")
+    print("    You aren't seeking out a new experience, and new expreiences tend to frighten you"
+    " a bit")
+    print("2. Fizz")
+    print("    You're on an adventure! You're excited to try out this new thing, and want "
+    "to seek out more new experiences in the future.")
+
+    
     
 
 
