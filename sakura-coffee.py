@@ -1,6 +1,5 @@
 import pygame
-import random
-import math
+import sys
 
 
 #our functions
@@ -17,18 +16,26 @@ pygame.display.set_caption("Sakura Cafe")
 
 #colors 
 PINK = (251, 198, 207)
-screen.fill(PINK)
+screen.fill(PINK) #screen base color
+pygame.display.update()
 
 personality1 = 0
 personality2 = 0
 
 
-while not exit:
-    for event in pygame.event.get(): 
-        if event.type == pygame.QUIT: 
-            exit = True
-        else:
-            #run thorugh main program
 
+def game_loop():
+    running = True
+    drawTitleScreen.drawTitleScreen();
+
+    while running:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+            #check for other clicks
 
         pygame.display.update()
+
+
+game_loop()
