@@ -1,4 +1,3 @@
-
 def meowmeow ():
     print("You go to sit at the table while the barista whips up your drink you look outside at")
     print("the trailing cherry blossom and jasmine flowers that seem to just drop-off the roof and")

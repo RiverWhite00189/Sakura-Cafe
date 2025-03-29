@@ -1,4 +1,4 @@
-
+#main story component and overall console functionality
 print ("You’re going about a regular day going day to day trudging along trying to figure out what to do today, with your life.")
 print("You look up and you’ve never seen this place on campus before. You glance at your watch, you have time. “I'll check it out”")
 print("you think to yourself. When you step inside you squint against a bright light and when you open your eyes you’re enveloped in soft pink light.")

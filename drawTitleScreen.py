@@ -1,3 +1,5 @@
+#draws the title screen for the GUI
+
 import pygame
 WHITE = (255, 255 , 255)
 

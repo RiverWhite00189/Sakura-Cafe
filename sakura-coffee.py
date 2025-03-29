@@ -1,3 +1,5 @@
+#GUI component
+
 import pygame
 import sys
 
