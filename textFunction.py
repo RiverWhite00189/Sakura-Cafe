@@ -11,6 +11,5 @@ def text_click(mousepos, area):
 
 def draw_text(screen, font, textStack, index):
     drawTitleScreen.drawTitleScreen(screen, 412, 771, pygame.Rect((0,150,500,150)), PINK)
-    print(textStack[index])
     text_out = font.render(textStack[index], False, WHITE)
-    screen.blit(text_out, (150,150))
+    screen.blit(text_out, (0,150))

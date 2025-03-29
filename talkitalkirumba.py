@@ -2,11 +2,19 @@ responses = []
 
 def talkitalkirumba ():
     choice = 0
+    print("You’re going about a regular day going day to day trudging along trying to figure out what to do today, with your life.")
+    print("You look up and you’ve never seen this place on campus before. You glance at your watch, you have time.")
+    print('I’ll check it out” you think to yourself.')
+    print('When you step inside you squint against a bright light and when you open your eyes you\’re enveloped in soft pink light.')
+    print('"Wait, is it already sunset!?"')
+    print("You ask yourself, you’re about to turn away when you hear a voice.")
+
+
     print("Welcome, would you like to order?\n")
     print("You have two choices\n")
     print("1: Wait, where am I?")
     print("2: What do you recommend?")
-    choice = input("Please choose 1 or 2 by entering the coresponding number ")
+    #choice = input("Please choose 1 or 2 by entering the coresponding number ")
     if (choice == "1"):
         print("Wait you're not from around here? I swear I saw you earlier at the apothocary.")
         print("Well you can't leave until you're ready to leave.") 
@@ -15,15 +23,15 @@ def talkitalkirumba ():
     print ("What were you palanning on doing today?")
     print("1: I really didn't know")
     print("2: I had a really good plan!")
-    choice = input("Please choose 1 or 2 by entering the coresponding number ")
+    #choice = input("Please choose 1 or 2 by entering the coresponding number ")
     if (choice == "1"):
         print("What type of day did you want to have?")
         print("1: A fun day")
         print("2: A productive day")
-        choice = input("Please choose 1 or 2 by entering the coresponding number ")
+        #choice = input("Please choose 1 or 2 by entering the coresponding number ")
         if (choice == "1"):
             print ("Did you want 1. a going out fun day or a 2. stay at home fun day?")
-            choice = input("Please choose 1 or 2 by entering the coresponding number ")
+            #choice = input("Please choose 1 or 2 by entering the coresponding number ")
             if (choice == "1"):
                 print("Ideas for a fun going out day: Catching a movie, going to the library, going to a park")
             else:
@@ -43,14 +51,14 @@ def talkitalkirumba ():
     print("please enter your tasks: ")
     print("When you're done adding your tasks, please press 4")
     while(exit == False):
-        task = input("please enter a task: ")
+        #task = input("please enter a task: ")
         if (task == "4"):
             exit  = True
         else:
             responses.append(task)
             
         global vibes
-        vibes = input("What is your main goal / intent / focus for today? ")
+        #vibes = input("What is your main goal / intent / focus for today? ")
     
 
 
@@ -61,6 +69,6 @@ def results():
     print ("and what you want your today to achomplish is: " + vibes)
 
     
-talkitalkirumba()
-results()
+#talkitalkirumba()
+#results()
    
