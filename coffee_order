@@ -78,7 +78,7 @@ def coffee_order(person1, person2):
     print("    You aren't seeking out a new experience, and new expreiences tend to frighten you"
     " a bit")
     print("2. Fizz")
-    print("    You're on an adventure! You're excited to try out this new thing, and want "
+    print("    You're on an adventure! You're excited to try out something new, and want "
     "to seek out more new experiences in the future.")
 
     #answer and iteration
@@ -91,9 +91,32 @@ def coffee_order(person1, person2):
         person2 += 1
         print("You nod excitedly. This is going to be the best drink ever.")
 
-    
-    
+    print()
+    print("\"I can tell you're getting sick of me, but this drink is almost done, don't worry!\""
+    "The barista looks up from her screen again.")
+    print("\"Would you like some cream of the crop in this? It's super tasty, it'll "
+    "definitely raise your spirits!\"")
 
+    print("1. ")
+    print("    You feel like you're missing something. You don't know what, but you're "
+    "craving something.")
+    print("2. ")
+    print("    You feel like you have all your cards together. You're collected and "
+    "ready to go face the world")
+
+    #answers
+    answer = input()
+    if answer == "1":
+        person1 += 1
+        print("\"Yeah, cream of the crop sounds good,\" you respond. Maybe this will be "
+        "the thing to fill that missing part of you.")
+    elif answer == "2":
+        person2 += 1
+        print("\"No thanks, I've got all the happiness I need!\" You flash a charming smile at "
+        "the barista. She doesn't seem impressed.")
+
+    #root/leaf
+    print()
 
     #debugging
     person2 -= 1
@@ -101,3 +124,19 @@ def coffee_order(person1, person2):
 
 
 coffee_order(personality1, personality2)
+
+#drafts
+#choices
+print("1. ")
+print("    You")
+print("2. ")
+print("    You")
+
+#calculations
+answer = input()
+if answer == "1":
+    person1 += 1
+    print("")
+elif answer == "2":
+    person2 += 1
+    print("")
