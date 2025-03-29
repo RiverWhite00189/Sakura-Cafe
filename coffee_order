@@ -168,20 +168,4 @@ def coffee_order(person1, person2):
     #print(person1, person2)
 
 
-coffee_order(personality1, personality2)
-
-#drafts
-#choices
-print("1. ")
-print("    You")
-print("2. ")
-print("    You")
-
-#calculations
-answer = input()
-if answer == "1":
-    person1 += 1
-    print("")
-elif answer == "2":
-    person2 += 1
-    print("")
+coffee_order(personality1, personality2)\
