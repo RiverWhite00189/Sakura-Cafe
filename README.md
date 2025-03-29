@@ -1,8 +1,8 @@
 ## Inspiration
-Many of our teammates have always struggled to "seize the day" in the sense that they wake up with a jumble of tasks in their heads, but no real way to organize them. Many of us found typical productivity apps to be "dry and repetitive" as well as disengaging and hard to stick with. Our team also enjoys narrative-focused games and stories, so we incorporated these elements into a cozy, low-stress cafe story game. 
+Many of our teammates have always struggled to "seize the day" in the sense that they wake up with a jumble of tasks in their heads, but no real way to organize them. Many of us found typical productivity apps to be "dry and repetitive" as well as disengaging and hard to stick with. Our team was inspired by narrative-focused games and stories, so we incorporated these elements into a cozy, low-stress cafe story game. 
 
 ## What it does
-Players enter a world with a warm, welcoming cafe, and through their experience, they plan out tasks, reflect on themselves, and explore long-term desires.
+Players enter a world with a warm, welcoming cafe where they speak with a barsita to create a whimsical drink, and through their conversation, they plan out tasks, set goals, and explore how they see the world.
 
 ## How we built it
 Our team worked through 3 main components: story, design, and development. The story focused on making a whimsical environment with magical realism that would invite the user to interact with the world. Our design tried to capture some of the more magical quirks of the world with bright colors and an abstract style that leaves much to the viewer's interpretation. Our development used solely Python along with the pygame library to create some visual elements. 
