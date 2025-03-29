@@ -81,13 +81,23 @@ def coffee_order(person1, person2):
     print("    You're on an adventure! You're excited to try out this new thing, and want "
     "to seek out more new experiences in the future.")
 
+    #answer and iteration
+    answer = input()
+    if answer == "1":
+        person1 += 1
+        print("\"No fizz for me, thanks,\" you say. You've had enough adventure, what with "
+        "the teleportation and fantasy world.")
+    elif answer == "2":
+        person2 += 1
+        print("You nod excitedly. This is going to be the best drink ever.")
+
     
     
 
 
     #debugging
     person2 -= 1
-    print(person1, person2)
+    #print(person1, person2)
 
 
 coffee_order(personality1, personality2)
