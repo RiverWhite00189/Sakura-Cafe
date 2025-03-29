@@ -57,8 +57,8 @@ def talkitalkirumba ():
         else:
             responses.append(task)
             
-        global vibes
-        vibes = input("What is your main goal / intent / focus for today? ")
+    global vibes
+    vibes = input("What is your main goal / intent / focus for today? ")
     
 
 

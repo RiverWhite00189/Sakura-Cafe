@@ -27,8 +27,8 @@ pygame.display.update()
 #pygame.font.init()
 #font = pygame.font.SysFont('Comic Sans MS', 10)
 
-#personality1 = 0
-#personality2 = 0
+personality1 = 0
+personality2 = 0
 
 #textStack = []
 #textStack = talkitalkirumba.stack1(textStack)
