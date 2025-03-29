@@ -1,5 +1,23 @@
-def coffee_order():
+personality1 = 0
+personality2 = 0
+
+def coffee_order(person1, person2):
+    #sweet or spicy order
     print("Let's see then. Do you like your drinks sweet or spicy?")
     print("1. Sweet")
-    print("2. Spicy")
     
+    print("2. Spicy")
+    print("\tYou like to jolt into action, and are fine being a little uncomfortable."
+    " Challenges spur you on.")
+    #input and iteration
+    answer = input()
+    if answer == 1:
+        person1 += 1
+    elif answer == 2:
+        person += 1
+    
+    print()
+    print("I see, ")
+
+
+coffee_order(personality1, personality2)

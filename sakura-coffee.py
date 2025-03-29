@@ -13,9 +13,12 @@ pygame.display.set_caption("Sakura Cafe")
 
 exit = False
 
+personality1 = 0
+personality2 = 0
+
 while not exit:
     for event in pygame.event.get(): 
         if event.type == pygame.QUIT: 
             exit = True
-        
+
         pygame.display.update()
