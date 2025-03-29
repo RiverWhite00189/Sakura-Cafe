@@ -38,13 +38,36 @@ def coffee_order(person1, person2):
     answer = input()
     if answer == "1":
         print("You nod, asking for sparkles, you need a little extra energy today"
-        "to get through everything you gotta do")
+        "to get through everything you gotta do.")
         person1 += 1
     elif answer == "2":
         print("You shake your head no. You're alredy wired enough and don't need any "
         "more energy today.")
         person2 += 2
 
+    print("\"Great!,\" the barista exclaims. \"Would you like any bubbles in that? They give"
+    " your drink a bit of extra chew.\"")
+    print("1. No Bubbles")
+    print("   You feel more comfortable staying where you know you're safe. You don't feel the "
+    "need to go out of your way to explore.")
+    print("2. With Bubbles")
+    print("    You want to explore new things and have an adventure. You aren't scared of "
+    "the unknown")
+
+    #answer and interation
+    answer = input()
+    if answer == "1":
+        person1 += 1
+        print("\"No bubbles, please,\" you say. The barista nods and smiles at you.")
+    if answer == "2":
+        person2 += 1
+        print("\"Yeah, I'd like some bubbles,\" you say, smiling. You're excited to try this new"
+        " fantasy coffee.")
+    
+
+
+    #debugging
+    person2 -= 1
     print(person1, person2)
 
 
