@@ -1,0 +1,5 @@
+def coffee_order():
+    print("Let's see then. Do you like your drinks sweet or spicy?")
+    print("1. Sweet")
+    print("2. Spicy")
+    
