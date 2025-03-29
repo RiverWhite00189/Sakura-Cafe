@@ -78,7 +78,7 @@ def coffee_order(person1, person2):
     print("    You aren't seeking out a new experience, and new expreiences tend to frighten you"
     " a bit")
     print("2. Fizz")
-    print("    You're on an adventure! You're excited to try out this new thing, and want "
+    print("    You're on an adventure! You're excited to try out something new, and want "
     "to seek out more new experiences in the future.")
 
     #answer and iteration
@@ -91,13 +91,81 @@ def coffee_order(person1, person2):
         person2 += 1
         print("You nod excitedly. This is going to be the best drink ever.")
 
-    
-    
+    print()
+    print("\"I can tell you're getting sick of me, but this drink is almost done, don't worry!\""
+    "The barista looks up from her screen again.")
+    print("\"Would you like some cream of the crop in this? It's super tasty, it'll "
+    "definitely raise your spirits!\"")
 
+    print("1. ")
+    print("    You feel like you're missing something. You don't know what, but you're "
+    "craving something.")
+    print("2. ")
+    print("    You feel like you have all your cards together. You're collected and "
+    "ready to go face the world")
 
+    #answers
+    answer = input()
+    if answer == "1":
+        person1 += 1
+        print("\"Yeah, cream of the crop sounds good,\" you respond. Maybe this will be "
+        "the thing to fill that missing part of you.")
+    elif answer == "2":
+        person2 += 1
+        print("\"No thanks, I've got all the happiness I need!\" You flash a charming smile at "
+        "the barista. She doesn't seem impressed.")
+
+    #root/leaf
+    print()
+    print("\"Now would you like some root or leaf with that? I hope I don't have to explain "
+    "this one, it's exactly what it sounds like.\"")
+    print("1. Leaf")
+    print("    You feel like you're blowing away in the wind. You don't have anything to "
+    "keep you grounded and focused.")
+    print("2. Root")
+    print("    You're grounded, you're on task, you're ready to get going. You don't need "
+    "any more help getting set and moving on.")
+
+    #answer/calculations
+    answer = input()
+    if answer == "1":
+        person1 += 1
+        print("\"I'd like leaf with that, please,\" you respond. You're not sure how "
+        "well leaf is going to translate into a drink")
+    elif answer == "2":
+        person2 += 1
+        print("\"Could I have that with root?\" You ask with confidence. This is without a doubt,"
+        "the best drink you'll ever have in you're life. Or the most interesting at least.")
+
+    print()
+    print("\"All right, one more question and then I can get started making this,\" "
+    "the barista looks down at her tablet and asks you \"Would you like your drink foggy?\"")
+    print("1. Foggy")
+    print("    You're not sure about what you want to do. You don't have a clear direction "
+    "goal, or don't know how to get there.")
+    print("2. No Fog")
+    print("    You know what you want and how to get it. All you need is the tools, and then "
+    "there's nothing that can stop you.")
+
+    #answers
+    answer = input()
+    if answer == "1":
+        person1 += 1
+        print("\"I'd like it foggy please.\"")
+    elif answer == "2":
+        person2 += 1
+        print("\"Not foggy, thank you.\"")
+
+    print("The barista makes one final selection on her tablet, then looks up at you with a "
+    "bright smile.")
+    print("\"It'll be ready in just a few minutes! Please ahve a seat and feel free to pet "
+    "the cat!\"")
+    print()
+    print("You walk over to a small table in the corner currently occupied by a "
+    "medium-sized white cat.")
     #debugging
     person2 -= 1
     #print(person1, person2)
 
 
-coffee_order(personality1, personality2)
+coffee_order(personality1, personality2)\
